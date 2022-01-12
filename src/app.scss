@@ -4,6 +4,19 @@
         width: 100%;
         height: calc(100vh - 70px);
         background-color: lightsalmon;
-       
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;   //para uma transição de sector (rolamento de pagina) mais suave
+        scrollbar-width: none;     //para o firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
     }
 }
