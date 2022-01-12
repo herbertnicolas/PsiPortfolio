@@ -15,5 +15,14 @@
     padding: 10px 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    .topLeft{
 
+        .logo{
+            font-weight: 700;
+            font-size: 38px;
+            text-decoration: none;       //tira o sublinhado do link
+            color: inherit;
+        }
+    }
 }
