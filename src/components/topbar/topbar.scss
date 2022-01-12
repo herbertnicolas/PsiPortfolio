@@ -7,7 +7,7 @@
     height: 70px;
     position: fixed;
     top: 0;
-    z-index: 2; //para ficar na camada no topo da pilha de elementos
+    z-index: 3; //para ficar na camada no topo da pilha de elementos
     transition: all 1s ease;     //suavizar transiçao de cores
 
     .wrapper{
@@ -19,7 +19,7 @@
             display: flex;
             align-items: center;
             .logo{
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 28px;
                 text-decoration: none;       //tirando o sublinhado do link
                 color: inherit;
