@@ -17,12 +17,17 @@
     align-items: center;
     justify-content: space-between;
     .topLeft{
-
+        display: flex;
+        align-items: center;
         .logo{
             font-weight: 700;
             font-size: 38px;
             text-decoration: none;       //tira o sublinhado do link
             color: inherit;
         }
+    }
+    .topRight{
+        display: flex;
+        align-items: center;
     }
 }
