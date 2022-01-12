@@ -8,26 +8,80 @@
     position: fixed;
     top: 0;
     z-index: 2; //para ficar na camada no topo da pilha de elementos
-    
-}
+    transition: all 1s ease;     //suavizar transiçao de cores
 
-.wrapper{
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .topLeft{
+    .wrapper{
+        padding: 10px 30px;
         display: flex;
         align-items: center;
-        .logo{
-            font-weight: 700;
-            font-size: 38px;
-            text-decoration: none;       //tira o sublinhado do link
-            color: inherit;
+        justify-content: space-between;
+        .topLeft{
+            display: flex;
+            align-items: center;
+            .logo{
+                font-weight: 700;
+                font-size: 28px;
+                text-decoration: none;       //tirando o sublinhado do link
+                color: inherit;
+            }
+        }
+        .topRight{
+            display: flex;
+            align-items: center;
+            
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: black;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+            .itemContainer{
+                margin-left: 15px;
+                
+                .icon{
+                    font-size: 13px;
+                }
+                .crp{
+                    font-size:18px;
+                    margin-left: 3px;
+                }
+                .iconZap{   //lembrar de mover para baixo depois
+                    font-size: 40px;
+                    color:#0EC244;
+                    margin-right: 6px;    
+                }
+            }
         }
     }
-    .topRight{
-        display: flex;
-        align-items: center;
+    &.active{
+        background-color: $mainColor;
+        color: white;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+            }
+        }
+        
     }
 }
