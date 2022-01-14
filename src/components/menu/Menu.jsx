@@ -5,19 +5,19 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     return (
         <div className={'menu ' + (menuOpen && "active")}>
             <ul>
-                <li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#intro">Sobre mim</a>
                 </li>
-                <li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#area">Áreas de atendimento</a>
                 </li>
-                <li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#espaco">O espaço</a>
                 </li>
-                <li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#depoimentos">Depoimentos</a>
                 </li>
-                <li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#contato">Contato</a>
                 </li>
                 
