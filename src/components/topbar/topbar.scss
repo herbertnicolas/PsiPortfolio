@@ -19,10 +19,14 @@
             display: flex;
             align-items: center;
             .logo{
+                font-family: 'Dancing Script', cursive;
                 font-weight: 600;
-                font-size: 28px;
+                font-size: 38px;
                 text-decoration: none;       //tirando o sublinhado do link
                 color: inherit;
+                &:hover{
+                    font-weight: 700;
+                }
             }
         }
         .topRight{

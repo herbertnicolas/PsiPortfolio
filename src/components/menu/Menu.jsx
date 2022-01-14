@@ -9,7 +9,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                     <a href="#intro">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#area">Áreas de atuação</a>
+                    <a href="#area">Áreas de atendimento</a>
                 </li>
                 <li>
                     <a href="#espaco">O espaço</a>
@@ -18,7 +18,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                     <a href="#depoimentos">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#contato">Endereço e contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
                 
             </ul>
