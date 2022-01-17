@@ -1,5 +1,6 @@
 @import "../../global.scss";
 
+
 .topbar{
     background-color: white;
     color:$mainColor;
@@ -9,7 +10,8 @@
     top: 0;
     z-index: 3; //para ficar na camada no topo da pilha de elementos
     transition: all 1s ease;     //suavizar transiçao de cores
-
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
     .wrapper{
         padding: 10px 30px;
         display: flex;
@@ -19,7 +21,8 @@
             display: flex;
             align-items: center;
             .logo{
-                font-family: 'Dancing Script', cursive;
+                
+                //font-family: 'Dancing Script', cursive;
                 font-weight: 600;
                 font-size: 38px;
                 text-decoration: none;       //tirando o sublinhado do link
