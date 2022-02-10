@@ -95,11 +95,12 @@
             left: 60%;
             
             img{   //nao esta vinculado ao right ????
-                width: 30px;
-                animation: arrowChange 2s infinite reverse;
+                width: 60px;
+                animation: arrowChange 5s infinite reverse;
+                
                 @keyframes arrowChange {
                     to{
-                        opacity: 50%;
+                        opacity: 0%;
                     }
                 }
             }

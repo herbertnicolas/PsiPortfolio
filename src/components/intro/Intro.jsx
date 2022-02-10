@@ -8,6 +8,7 @@ export default function Intro() {
     useEffect(()=>{
         init(textFlow.current, { 
             showCursor: false, 
+            backDelay: 3000,
             strings: ['Psicóloga Clínica', 'Atenção Psicossocial' ] 
         });
     },[]);
@@ -30,7 +31,7 @@ export default function Intro() {
                         <h2> <span ref={textFlow}>Psicóloga Clínica</span></h2>
                     </div>
                 </div>
-                <a href="#portfolio">
+                <a href="#area">
                     <img src="assets/down.png" alt=""></img>
                 </a>
               
