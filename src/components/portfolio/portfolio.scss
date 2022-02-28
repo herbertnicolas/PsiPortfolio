@@ -1,3 +1,23 @@
 .portfolio{
     background-color: lightskyblue;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 100px 30px;
+    //justify-content: center;
+
+    ul{
+        align-items: center;
+        margin: 10px;
+        padding-top: 50px;
+        list-style: none;
+        display: flex;
+        
+        li{
+            margin-right: 50px;
+        }
+    }
+    .item{
+        padding: 20px;
+    }
 }

@@ -9,7 +9,7 @@ export default function Intro() {
         init(textFlow.current, { 
             showCursor: false, 
             backDelay: 3000,
-            strings: ['Psicóloga Clínica', 'Atenção Psicossocial' ] 
+            strings: ['Psicóloga Clínica', 'Atenção Psicossocial', 'Atendimento Infantil'] 
         });
     },[]);
 
@@ -28,7 +28,7 @@ export default function Intro() {
                         <h3>CRP 02/22596</h3>
                         <h1>Adna Priscilla Cabral.</h1>
                         
-                        <h2> <span ref={textFlow}>Psicóloga Clínica</span></h2>
+                        <h2> <span ref={textFlow}></span></h2>
                     </div>
                 </div>
                 <a href="#area">
